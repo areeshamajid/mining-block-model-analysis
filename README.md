@@ -1,4 +1,4 @@
-# Mining Block Model – Ore vs Waste Profitability (PostgreSQL & Python)
+# MINING BLOCK MODEL ANALYSIS: CATEGORISING ORE AND WASTE BLOCKS USING PYTHON AND SQL
 
 **Author:** Areesha Majid
 
