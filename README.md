@@ -1,5 +1,7 @@
 # Mining Block Model – Ore vs Waste Profitability (PostgreSQL & Python)
 
+**Author:** Areesha Majid
+
 This project uses a toy iron‑ore block model to turn raw geological data into simple business insights using Python, PostgreSQL, and SQL. It focuses on mapping technical rock types into business categories (ore vs waste), cleaning the data, and analysing which blocks create or destroy value.
 
 ## 1. Project Overview
@@ -43,9 +45,28 @@ All queries are in `sql.sql`, grouped as:
 4. **Key Block‑Level Insights**
    - Top/bottom profit blocks, high‑grade ore blocks, and top 5 profitable blocks per rock type using window functions.
 
-## 5. How to Run
+## 5.Project Files
+- `mining_block_model_cleaning.ipynb` – Python / Colab notebook for data cleaning, outlier removal, and export of the cleaned CSV.
+- `mining_cleaned.csv` – Cleaned block model dataset used for SQL analysis.
+- `sql.sql` – PostgreSQL script: table creation, QA checks, profitability analysis, and block‑level insight queries.
+- `report.docx` – Word report of queries and a detailed narrative of the analysis.
+- `README.md` – Project overview, how to run, and main findings.
+Put this just after you
+## 6. How to Run
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/areeshamajid/mining-block-model-analysis.git
    cd mining-block-model-analysis
+
+   2. **Set up PostgreSQL**
+   - Create a database, for example `mining_block_model_db`.
+   - Open your SQL client (pgAdmin, DBeaver, etc.).
+   - Run `sql.sql`:
+     - Create the `mining_block_model` table.
+     - Load `mining_cleaned.csv` into the table (using COPY or your client’s import wizard).
+     - Execute the analysis queries.
+
+3. **Open the Python notebook**
+   - Open `mining_block_model_cleaning.ipynb` in Colab or Jupyter to see the data‑cleaning and outlier‑removal steps.
+
