@@ -58,11 +58,13 @@ Put this just after you
    ```bash
    git clone https://github.com/areeshamajid/mining-block-model-analysis.git
    cd mining-block-model-analysis
+   ```
 
-   2. **Set up PostgreSQL**
+2. **Set up PostgreSQL**
    - Create a database, for example `mining_block_model_db`.
    - Open your SQL client (pgAdmin, DBeaver, etc.).
    - Run `sql.sql`:
+ 
      - Create the `mining_block_model` table.
      - Load `mining_cleaned.csv` into the table (using COPY or your client’s import wizard).
      - Execute the analysis queries.
